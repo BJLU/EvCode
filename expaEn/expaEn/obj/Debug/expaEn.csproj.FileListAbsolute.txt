@@ -1,0 +1,11 @@
+F:\coeVi\expaEn\expaEn\bin\Debug\expaEn.exe.config
+F:\coeVi\expaEn\expaEn\bin\Debug\expaEn.exe
+F:\coeVi\expaEn\expaEn\bin\Debug\expaEn.pdb
+F:\coeVi\expaEn\expaEn\bin\Debug\EntityFramework.dll
+F:\coeVi\expaEn\expaEn\bin\Debug\EntityFramework.SqlServer.dll
+F:\coeVi\expaEn\expaEn\bin\Debug\EntityFramework.xml
+F:\coeVi\expaEn\expaEn\bin\Debug\EntityFramework.SqlServer.xml
+F:\coeVi\expaEn\expaEn\obj\Debug\expaEn.csproj.CoreCompileInputs.cache
+F:\coeVi\expaEn\expaEn\obj\Debug\expaEn.exe
+F:\coeVi\expaEn\expaEn\obj\Debug\expaEn.pdb
+F:\coeVi\expaEn\expaEn\obj\Debug\expaEn.csprojResolveAssemblyReference.cache
