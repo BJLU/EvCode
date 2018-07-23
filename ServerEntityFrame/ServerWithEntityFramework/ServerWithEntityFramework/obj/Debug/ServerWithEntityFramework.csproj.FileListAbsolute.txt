@@ -1,0 +1,11 @@
+F:\coeVi\ServerEntityFrane\ServerWithEntityFramework\ServerWithEntityFramework\bin\Debug\ServerWithEntityFramework.exe.config
+F:\coeVi\ServerEntityFrane\ServerWithEntityFramework\ServerWithEntityFramework\bin\Debug\ServerWithEntityFramework.exe
+F:\coeVi\ServerEntityFrane\ServerWithEntityFramework\ServerWithEntityFramework\bin\Debug\ServerWithEntityFramework.pdb
+F:\coeVi\ServerEntityFrane\ServerWithEntityFramework\ServerWithEntityFramework\bin\Debug\EntityFramework.dll
+F:\coeVi\ServerEntityFrane\ServerWithEntityFramework\ServerWithEntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+F:\coeVi\ServerEntityFrane\ServerWithEntityFramework\ServerWithEntityFramework\bin\Debug\EntityFramework.xml
+F:\coeVi\ServerEntityFrane\ServerWithEntityFramework\ServerWithEntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+F:\coeVi\ServerEntityFrane\ServerWithEntityFramework\ServerWithEntityFramework\obj\Debug\ServerWithEntityFramework.csproj.CoreCompileInputs.cache
+F:\coeVi\ServerEntityFrane\ServerWithEntityFramework\ServerWithEntityFramework\obj\Debug\ServerWithEntityFramework.exe
+F:\coeVi\ServerEntityFrane\ServerWithEntityFramework\ServerWithEntityFramework\obj\Debug\ServerWithEntityFramework.pdb
+F:\coeVi\ServerEntityFrane\ServerWithEntityFramework\ServerWithEntityFramework\obj\Debug\ServerWithEntityFramework.csprojResolveAssemblyReference.cache
