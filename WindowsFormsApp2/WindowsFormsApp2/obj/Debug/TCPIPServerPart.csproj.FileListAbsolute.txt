@@ -1,0 +1,13 @@
+F:\coeVi\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+F:\coeVi\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+F:\coeVi\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+F:\coeVi\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+F:\coeVi\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+F:\coeVi\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\TCPIPServerPart.csproj.GenerateResource.Cache
+F:\coeVi\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\TCPIPServerPart.csproj.CoreCompileInputs.cache
+F:\coeVi\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+F:\coeVi\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+F:\coeVi\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.dll
+F:\coeVi\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.dll
+F:\coeVi\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.xml
+F:\coeVi\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\EntityFramework.SqlServer.xml
