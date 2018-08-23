@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "InfoTender";
+}
+<style>
+    .base {
+        width: 800px;
+        height: 800px;
+        border: 1px solid black;
+    }
+
+    .baseInfo {
+        width: 100%;
+        height: 250px;
+        border: 1px solid black;
+    }
+
+    .status {
+        width: 100%;
+        height: 250px;
+        border: 1px solid black;
+    }
+
+    .Organizer {
+        width: 100%;
+        height: 250px;
+        border: 1px solid black;
+    }
+
+    .data {
+        width: 100%;
+        height: 250px;
+        border: 1px solid black;
+    }
+</style>
+
+<h2>InfoTender</h2>
+<div class="base">
+    <form method="get">
+        @*<input type="hidden" value="@ViewBag.TenderId" name="Id" />*@
+        <table border="0" cellspacing="0" cellpadding="6" width="100%" height="100%" align="left">
+            <tr>
+                <td>
+                    <div class="baseInfo">
+                        <p>@ViewBag.TenderId.Id</p>
+                        <p>@ViewBag.TenderId.Subject_tender</p>
+                        <p>@ViewBag.TenderId.Description_tender</p>
+                        <p>@ViewBag.TenderId.Kind_tender</p>
+                        <p>@ViewBag.TenderId.Category_tender</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="status">
+                        <p>@ViewBag.TenderId.Budget_tender</p>
+                        <p>@ViewBag.TenderId.Currency_tender</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="Organizer">
+                        <p>@ViewBag.TenderId.Organizer_tender</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="data">
+                        <p>@ViewBag.TenderId.Data_tender</p>
+                        <p>@ViewBag.TenderId.AcceptFromThe</p>
+                        <p>@ViewBag.TenderId.AcceptTo</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

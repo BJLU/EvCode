@@ -1,0 +1,235 @@
+﻿@model WebApplication1.IndexViewModel
+@using WebApplication1.Helpers;
+@{
+    ViewBag.Title = "To";
+}
+
+<h2>To</h2>
+<style>
+    .filters {
+        width:250px;
+        height:600px;
+        border:1px solid black;
+    }
+
+    .search {
+        width: 700px;
+        height: 100px;
+        border: 1px solid black;
+    }
+
+    .tenders {
+        width: 700px;
+        height: 500px;
+        border: 0px solid black;
+    }
+
+    .pagin {
+        width: 720px;
+        height: 120px;
+        border: 1px solid black;
+    }
+
+    .tender {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    .tenders_cell {
+        width:200px;
+        height:100%;
+        border: 1px solid black;
+    }
+</style>
+<table border="0" cellspacing="0" cellpadding="5">
+    <tr>
+        <td>
+            
+            <div class="filters">
+                <table border="0" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td>
+                            <div class="organizer">
+                                <form method="post" action="/Home/Organizer/organizer">
+
+                                    <table width="100%" height="100%" cellpadding="5" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <input type="text" name="organizer" />
+                                            </td>
+                                            <td>
+                                                <input type="submit" value="OK" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="KindTender">
+                                <form method="post" action="/Home/Kind/kindTender">
+
+                                    <table width="100%" height="100%" cellpadding="5" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <input type="text" name="kindTender" />
+                                            </td>
+                                            <td>
+                                                <input type="submit" value="OK" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dataTender">
+                                <form method="post" action="/Home/Data/dataTender">
+
+                                    <table width="100%" height="100%" cellpadding="5" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <input type="text" name="dataTender" />
+                                            </td>
+                                            <td>
+                                                <input type="submit" value="OK" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            </td>
+        <td><div class="search">
+                <form method="post" action="/Home/To/str">
+                    
+                    <table width="100%" height="100%" cellpadding="5" cellspacing="0" align="center">
+                        <tr>
+                            <td>
+                                <input type="text" name="str"/>
+                            </td>
+                            <td>
+                                <input type="submit" value="OK" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="tenders">
+                <table width="100%" height="100%" >
+                   
+                @if (Model.Tenders != null && !(Model.Tenders is IEnumerable<Tender>))
+                {
+                    <tr>
+                        <td>
+                            <a href="/Home/InfoTender/@ViewBag.Tenders.Id">
+                                <div class="tender">
+                                    <table width="100%" border="0" height="100%" cellpadding="5" cellspacing="0">
+                                        <td>
+                                            <div class="tenders_cell">
+                                                <table width="100%" height="100%" cellpadding="5" cellspacing="5">
+                                                    <p>@ViewBag.Tenders.Id</p>
+
+
+                                                    <p>@ViewBag.Tenders.Subject_tender</p>
+
+
+                                                    <p>@ViewBag.Tenders.Organizer_tender</p>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="tenders_cell">
+                                                <table width="100%" height="100%" cellpadding="5" cellspacing="0">
+                                                    <p>@ViewBag.Tenders.Budget_tender</p>
+
+
+                                                    <p>@ViewBag.Tenders.Currency_tender</p>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="tenders_cell">
+                                                <table width="100%" height="100%" cellpadding="5" cellspacing="0">
+                                                    <p>@ViewBag.Tenders.AcceptFromThe</p>
+
+
+                                                    <td><p>@ViewBag.Tenders.AcceptTo</p></td>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </table>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                            }
+                            else
+                            {
+                                foreach (var tender in Model.Tenders)
+                                {
+
+                    <tr>
+                        <td>
+                        <a href="/Home/InfoTender/@tender.Id"><div class="tender">
+                            <table width="100%" height="100%" border="0" cellpadding="5" cellspacing="0">
+                            <td>
+                                <div class="tenders_cell">
+                                    <table width="100%" height="100%" cellpadding="5" cellspacing="0">
+                                        <p>@tender.Id</p>
+
+
+                                        <p>@tender.Subject_tender</p>
+
+
+                                        <p>@tender.Organizer_tender</p>
+                                    </table>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tenders_cell">
+                                    <table width="100%" height="100%" cellpadding="5" cellspacing="0">
+                                        <p>@tender.Budget_tender</p>
+                                    
+                                    
+                                        <p>@tender.Currency_tender</p>
+                                    </table>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tenders_cell">
+                                    <table width="100%" height="100%" cellpadding="5" cellspacing="0">
+                                        <p>@tender.AcceptFromThe</p>
+
+
+                                        <td><p>@tender.AcceptTo</p></td>
+                                    </table>
+                                </div>
+                            </td>
+                            </table>
+                        </div>
+                            </a>
+                        </td>
+                    </tr>
+                }
+                }
+                </table>
+            </div></td>
+        
+    </tr>
+</table>
+<div class="pagin">
+    <div class="btn-group">
+        @Html.PageLinks(Model.PageInfo, x => Url.Action("To", new { page = x }))
+    </div>
+</div>
+
